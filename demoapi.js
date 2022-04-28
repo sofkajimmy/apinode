@@ -13,7 +13,7 @@ app.get('/', (req,res) =>{
 })
 
 app.post('/statedevice',(req,res)=>{
-    statedevice = req.body.build_status
+    statedevice = req.body.status
     console.log("POST estate device " +statedevice)
     res.send('Resultado estate device!'+statedevice)
 })
